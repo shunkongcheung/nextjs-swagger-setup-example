@@ -41,7 +41,7 @@ interface Data {
 }
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  const { name = "John Doe" } = req.query;
+  const { name = "John Doe" } = req.query as any;
   res.statusCode = 200;
   res.json({ name });
 };
