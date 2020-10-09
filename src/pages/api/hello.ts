@@ -11,6 +11,33 @@ import { NextApiRequest, NextApiResponse } from "next";
  *         name:
  *           type: string
  *
+ * definitions:
+ *   User:
+ *     type: object
+ *     properties:
+ *       username:
+ *         type: string
+ *       firstName:
+ *         type: string
+ *       lastName:
+ *         type: string
+ *       products:
+ *         type: array
+ *         items:
+ *           $ref:  '#/definitions/Product'
+ *
+ *   Product:
+ *     type: object
+ *     properties:
+ *       name:
+ *         type: string
+ *       createdBy:
+ *         type: object
+ *         $ref: '#/definitions/User'
+ *       createdAt:
+ *         type: Date
+ *
+ *
  * tags:
  *   - name: Hello
  *     description: A sample of API Group 
