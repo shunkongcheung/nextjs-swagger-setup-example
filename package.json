@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-		"swagger":"swagger-jsdoc -d swaggerDef.js && mv swagger.json ./public/."
+    "swagger": "swagger-jsdoc -d swaggerDef.js && mv swagger.json ./public/."
   },
   "dependencies": {
     "next": "9.5.4",
