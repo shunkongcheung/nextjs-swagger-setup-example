@@ -19,7 +19,7 @@ const Docs: NextPage = ({
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
   useEffect(() => {
-    if (isDev) router.push("/404");
+    if (!isDev) router.push("/404");
   }, [isDev]);
 
   return <SwaggerUI url="/swagger.json" />;
