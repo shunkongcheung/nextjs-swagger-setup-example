@@ -34,4 +34,4 @@ yarn-error.log*
 .vercel
 
 # documentation
-/public/swagger-doc.json
+/public/swagger.json
